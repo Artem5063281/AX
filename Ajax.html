@@ -9,6 +9,10 @@
 <body>
     <div>
         <script>
+            var data = {};
+            fetch("https://jsonplaceholder.typicode.com/photos")
+                .then(response => response.json())
+                .then(photos => console.log(photos))
         </script>
     </div>
 </body>
